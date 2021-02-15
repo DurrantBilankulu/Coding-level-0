@@ -1,11 +1,10 @@
-#A function that prints x and y values given some conditions
+#Printing values of x and y
 
-def print_x_and_y(x_value,y_value):
-    print (x_value) 
-    print (y_value)
-    x_value = x_value+3
-    y_value = y_value+x_value
-    print(x_value)
-    return y_value
-
-print(print_x_and_y(0,1))
+x=0
+y=1
+print(x)
+print(y)
+x=x+3
+y=y+x
+print(x)
+print(y)
