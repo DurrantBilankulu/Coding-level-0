@@ -1,4 +1,4 @@
-def number_toTime(number):
+def time_conversion(number):
     hours = number // 60
     minutes = number % 60
     if hours >= 2:
