@@ -1,6 +1,5 @@
-
 def number_to_time(number):
-    hours = number//60
+    hours = number // 60
     minutes = number % 60
     if hours >= 2:
         if minutes >= 2:
