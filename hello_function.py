@@ -1,6 +1,8 @@
 def hello(name):
 
     if type(name) != str:
-        return "The argument must be a string,try again"
+        result = "The argument must be a string,try again."
     else:
-        return "Hello %s!" % name
+        result = f"Hello {name}!"
+    print(result)
+    
