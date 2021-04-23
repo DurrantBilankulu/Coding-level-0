@@ -1,13 +1,15 @@
 def time_conversion(number):
+
     hours = number // 60
     minutes = number % 60
-    if hours >= 2:
-        if minutes >= 2:
-            return "%d hours, %d minutes" % (hours, minutes)
+    if hours >= 2 or hours == 0:
+        if minutes >= 2 or minutes == 0:
+            time = f"{hours} hours, {minutes} minutes"
         else:
-            return "%d hours, %d minute" % (hours, minutes)
+            time = f"{hours} hours, {minutes} minute"
     else:
-        if hours < 2 and minutes < 2:
-            return "%d hour, %d minute" % (hours, minutes)
+        if hours < 2 and (minutes < 2 and minutes != 0):
+            time = f"{hours} hour, {minutes} minute"
         else:
-            return "%d hour, %d minutes" % (hours, minutes)
+            time = f"{hours} hour, {minutes} minutes"
+    return time
